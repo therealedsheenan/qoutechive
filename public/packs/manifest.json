@@ -1,8 +1,6 @@
 {
-  "application.js": "/packs/application-6e7fc2ff649c2fa38bae.js",
-  "application.js.map": "/packs/application-6e7fc2ff649c2fa38bae.js.map",
-  "hello-world-bundle.js": "/packs/hello-world-bundle-5fd57163eb248ce41a26.js",
-  "hello-world-bundle.js.map": "/packs/hello-world-bundle-5fd57163eb248ce41a26.js.map",
-  "hello_react.js": "/packs/hello_react-b1b4faf214557339f7e0.js",
-  "hello_react.js.map": "/packs/hello_react-b1b4faf214557339f7e0.js.map"
+  "application.js": "/packs/application-8342d7172c09b866b651.js",
+  "application.js.map": "/packs/application-8342d7172c09b866b651.js.map",
+  "main.js": "/packs/main-7350c6034390caca4087.js",
+  "main.js.map": "/packs/main-7350c6034390caca4087.js.map"
 }
