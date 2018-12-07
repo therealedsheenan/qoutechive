@@ -19,9 +19,11 @@ class HomeController < ApplicationController
   # https://rapidapi.com/andruxnet/api/Random%20Famous%20Quotes/functions/GET%20endpoint
   def fetch_random_quotes
     api_address = 'https://andruxnet-random-famous-quotes.p.rapidapi.com/?cat=famous&count=10'
+    api_key = 'ftPXaudh3AmshGaCoqgSOjqETX0jp14ejQ6jsnSdFn6LyK8FGT'
+    host_address = 'andruxnet-random-famous-quotes.p.rapidapi.com'
     headers = {
-      'X-Mashape-Key': 'ftPXaudh3AmshGaCoqgSOjqETX0jp14ejQ6jsnSdFn6LyK8FGT',
-      'X-Mashape-Host': 'andruxnet-random-famous-quotes.p.rapidapi.com'
+      'X-Mashape-Key': api_key,
+      'X-Mashape-Host': host_address
     }
     call_api(api_address, headers)
   end
