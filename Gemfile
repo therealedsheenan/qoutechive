@@ -34,6 +34,9 @@ gem 'httparty', '~> 0.16.3'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
+# Authentication
+gem 'devise'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
