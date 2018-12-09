@@ -59,10 +59,10 @@ export default class Main extends React.Component {
         <div className="quotes">
           {quotes.map((q) => (
             <div className="quotes-item" key={`${q.author} - ${q.quote}`}>
-              <span>{q.category}</span>
-              <p>{q.author}</p>
+              {/*<span>{q.category}</span>*/}
+              <p><strong>{q.author}</strong></p>
               <div className="quotes-block">
-                <p>{q.quote}</p>
+                <p><i>{q.quote}</i></p>
               </div>
             </div>
           ))}
