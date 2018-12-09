@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_09_142235) do
+ActiveRecord::Schema.define(version: 2018_12_09_144426) do
+
+  create_table "favorites", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "quote_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id", "quote_id"], name: "index_favorites_on_user_id_and_quote_id"
+  end
+
+  create_table "quotes", force: :cascade do |t|
+    t.string "author"
+    t.string "category"
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category"], name: "index_quotes_on_category"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
